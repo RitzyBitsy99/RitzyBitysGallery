@@ -4,7 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Gallery</title>
-<link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333; /* Dark gray text color for contrast */
+        }
+        .navbar {
+            background-color: #ffcccb; /* Light pink background for navbar */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #333; /* Dark text color for contrast */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ff99cc; /* Light pink for hover effect */
+        }
+        .gallery {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ff66b2; /* Pink accent border */
+            border-radius: 4px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(33% - 20px); /* 3 columns, adjust as needed */
+            box-sizing: border-box;
+        }
+        .footer {
+            background-color: #ff66b2; /* Pink accent */
+            color: #fff; /* White text for contrast */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
