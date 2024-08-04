@@ -3,81 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery</title>
+    <title>Gallery Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Light gray background color */
-            color: #333; /* Dark gray text color for contrast */
+            background: url('https://images.unsplash.com/photo-1603090919053-69c0d80b4c47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZsb3dlcnxlbnwwfHx8fDE2NzM4NjA0NTI&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
         }
-        .navbar {
-            background-color: #ffcccb; /* Light pink background for navbar */
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #333; /* Dark text color for contrast */
+        header {
             text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
+            padding: 20px;
+            background-color: rgba(255, 192, 203, 0.8);
         }
-        .navbar a:hover {
-            background-color: #ff99cc; /* Light pink for hover effect */
+        header h1 {
+            margin: 0;
+            color: #fff;
         }
         .gallery {
-            padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            justify-content: space-around;
+            padding: 20px;
         }
         .gallery img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ff66b2; /* Pink accent border */
-            border-radius: 4px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 5px solid #ffb6c1;
+            border-radius: 10px;
         }
-        .gallery-item {
-            flex: 1 1 calc(33% - 20px); /* 3 columns, adjust as needed */
-            box-sizing: border-box;
-        }
-        .footer {
-            background-color: #ff66b2; /* Pink accent */
-            color: #fff; /* White text for contrast */
+        footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background-color: rgba(255, 192, 203, 0.8);
             position: fixed;
             width: 100%;
             bottom: 0;
         }
+        footer p {
+            margin: 0;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
+    <header>
+        <h1>Ritzy Bitsy's Gallery</h1>
+    </header>
 
-    <!-- Gallery Section -->
     <div class="gallery">
-        <div class="gallery-item"><img src="image1.jpg" alt="Art Piece 1"></div>
-        <div class="gallery-item"><img src="image2.jpg" alt="Art Piece 2"></div>
-        <div class="gallery-item"><img src="image3.jpg" alt="Art Piece 3"></div>
-        <div class="gallery-item"><img src="image4.jpg" alt="Art Piece 4"></div>
-        <div class="gallery-item"><img src="image5.jpg" alt="Art Piece 5"></div>
-        <div class="gallery-item"><img src="image6.jpg" alt="Art Piece 6"></div>
-        <!-- Add more gallery items as needed -->
+        <img src="https://images.unsplash.com/photo-1531484412095-7e0c1be2dd5d" alt="Gallery Image 1">
+        <img src="https://images.unsplash.com/photo-1513152991610-d92a13409b08" alt="Gallery Image 2">
+        <img src="https://images.unsplash.com/photo-1531484412095-7e0c1be2dd5d" alt="Gallery Image 3">
+        <img src="https://images.unsplash.com/photo-1513152991610-d92a13409b08" alt="Gallery Image 4">
+        <img src="https://images.unsplash.com/photo-1531484412095-7e0c1be2dd5d" alt="Gallery Image 5">
+        <img src="https://images.unsplash.com/photo-1513152991610-d92a13409b08" alt="Gallery Image 6">
+        <img src="https://images.unsplash.com/photo-1531484412095-7e0c1be2dd5d" alt="Gallery Image 7">
+        <img src="https://images.unsplash.com/photo-1513152991610-d92a13409b08" alt="Gallery Image 8">
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>Contact us at: info@example.com | Phone: (123) 456-7890</p>
-        <p>&copy; 2024 Art Gallery. All rights reserved.</p>
-    </div>
+    <footer>
+        <p>Contact us: ritzybitsy.com | Phone: (123) 456-7890</p>
+    </footer>
 </body>
 </html>
